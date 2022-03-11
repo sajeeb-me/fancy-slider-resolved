@@ -7,6 +7,12 @@ const sliderContainer = document.getElementById('sliders');
 // selected image 
 let sliders = [];
 
+document.getElementById("search")
+  .addEventListener("keyup", function (event) {
+    if (event.key === "Enter") {
+      document.getElementById("search-btn").click();
+    }
+  });
 
 // If this key doesn't work
 // Find the name in the url and go to their website
